@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="movies.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/bootstrap-icons.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo"><img src="logo.png"></a>
+            <div class="end_bx">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Category</a></li>
+                </ul>
+                <!--  -->
+                <ul class="menu" style="display: none;">
+                    <li>
+                        <a href="#">Parent Link</a>
+
+                        <ul>
+                            <li><a href="#">Child Link</a></li>
+                            <li><a href="#">Child Link</a></li>
+                            <li><a href="#">Child Link</a></li>
+                            <li><a href="#">Child Link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--  -->
+                <div class="search">
+                    <input type="text" placeholder="Search movies..." id="search">
+                    <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+                </div>
+                <div class="bell">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="user">
+                    <img src="user.png">
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <h6>Duration: <span>1h 47min</span></h6>
+            <h3><i class="fa-solid fa-star">6.5
+                    <span>Action / Adventure / Sci-Fi</span>
+                </i></h3>
+            <h1>Rampage</h1>
+            <p>A ranger of the vast plains of Seradati, Rampage has captured in his human form the strength of the
+                Beasts. Atop his mighty rhino Horatio, Rampage smashes through enemy lines and moves at times with
+                unnerving speed.</p>
+            <div class="btns">
+                <button><i class="fa-solid fa-play"></i>WATCH</button>
+                <button><i class="fa-sharp fa-solid fa-plus"></i>ADD LIST</button>
+            </div>
+        </div>
+        <!-- <div class="slider_btns">
+            <h6 class="slider"></h6>
+            <h6 class="slider"></h6>
+            <h6 class="slider"></h6>
+        </div> -->
+    </header>
+
+    <div class="tranding_bx">
+        <li><a href="#"><i class="fa-solid fa-chevrons-up"></i>Trends Now <span></span></a></li>
+        <li><a href="#"><i class="fa-solid fa-fire"></i>Popular<span></span></a></li>
+        <li><a href="#"><i class="fa-solid fa-star"></i>Prefrens<span></span></a></li>
+        <li><a href="#"><i class="fa-sharp fa-solid fa-plus"></i>Recently Added<span></span></a></li>
+    </div>
+
+
+    <div class="cato_bx" id="cato_bx">
+        <button>Action</button>
+        <button>Crime</button>
+        <button>Adventure</button>
+        <button>Biography</button>
+        <button>Animation</button>
+        <button>Comady</button>
+        <button>Documentary</button>
+        <button>Drama</button>
+        <button>WebSeries</button>
+        <button>18+</button>
+        <button>SciFi</button>
+        <button>Haror</button>
+        <div class="cato_left_right">
+            <i class="fa-solid fa-angle-down" id="left_scroll"></i>
+        </div>
+        <div class="cato_left_right">
+            <i class="fa-solid fa-angle-down" id="right_scroll"></i>
+        </div>
+    </div>
+
+    <div class="movie_bx_1" id="mvoes_bx_1">
+        <button> <i id="left_scroll1" class="fa-solid fa-angle-down"></i></button>
+        <button> <i id="right_scroll1" class="fa-solid fa-angle-down"></i></i></button>
+        <div class="card">
+            <a href="#">
+                <img src="venom2.webp" alt="">
+                <div class="content">
+                    <h5>Venom 2 </h5>
+                    <h6>
+                        <span>2018</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>6.5</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="a perfact.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="abcd.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD</h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>6.5</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="theblackwater.webp" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="mortel.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="masti.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="noah.webp" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="malang.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="oblivin.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="notimethedie.webp" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="red_notice.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="legion.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="love aaj.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="pixels.webp" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="danger close.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="scoobi.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="shaho.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="shaho.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="Qismat_2.webp" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="qrib.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="x man.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="xtreme.webp" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="war.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="warrior.webp" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="wolf.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="theblackwater.webp" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="the-ghazi-attack-poster.webp" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="term.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="takepoint.webp" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="shiddat.webp" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="snakeeyes.webp" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="ssoul.jpg" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="uri.png" alt="">
+                <div class="content">
+                    <h5>A perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="video_bx">
+        <video src="trailer-kung-fyury-2.mp4"  muted>
+        </video>
+        <div class="control">
+            <div class="play_redo">
+                <i class="bi bi-play-fill"></i>
+                <i class="bi bi-arrow-clockwise"></i>
+                <span>10</span>
+            </div>
+            <div class="start_seekbar_end">
+                <span>28.04</span>
+                <div class="seek">
+                    <input type="range">
+                    <h5></h5>
+                    <h4></h4>
+                    <h6></h6>
+                </div>
+                <span>40.06</span>
+            </div>
+            <div class="cc_vol_screen">
+                <i class="bi bi-badge-cc-fill"></i>
+                <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                <input type="range" name="vol" id="vol">
+                <i class="bi bi-arrows-fullscreen"></i>
+            </div>
+        </div>
+        <h4 class="title_video">Rampage trailer hd coming soon</h4>
+        <span class="watching"><i class="fas fa-eye"></i></span>
+        <div class="heart_pluse"><i class="fas fa-heart"></i> <i class="fas fa-plus"></i></div>
+        <div class="video_list">
+            <img src="rampage.jpg" class="video_list">
+            <img src="rampage2.jpg" class="video_list">
+            <img src="rampage3.jpg" class="video_list">
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
